@@ -28,7 +28,7 @@ Actors:
 
 ## 🔄 Sequence Diagram
 
-![Sequence](uml-cybersecurity-Sequence Diagram.drawio.png)
+![Sequence](sequence.png)
 
 ### Description
 Illustrates interaction between system components during authentication.
@@ -45,7 +45,7 @@ Flow:
 
 ## ⚙️ Activity Diagram
 
-![Activity](uml-cybersecurity-Activity Diagram.drawio.png)
+![Activity](activity.png)
 
 ### Description
 Represents workflow logic of authentication and decision-making process.
