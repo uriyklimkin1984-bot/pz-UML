@@ -1,36 +1,74 @@
-# Practical lesson pz-UML
-## Побудова повердінкових UML-діаграм для проєктування інформаційних систем
+# UML Behavioral Modeling
+## Unauthorized Access Detection System
 
-> У цьому занятті студенти отримують практичні навички моделювання інформаційних систем за допомогою UML.
-> Мета — навчитися аналізувати вимоги до системи та візуалізувати її структуру й поведінку за допомогою поведінкових UML-діаграм.
+---
 
-## What need to do:
+## 📌 Project Description
 
-* Обрати предметну область або просту інформаційну систему для моделювання
-* Побудувати діаграму варіантів використання (Use Case Diagram)
-* Побудувати діаграму послідовності (Sequence Diagram)
-* Побудувати діаграму діяльності (Activity Diagram)
-* Використати будь-який інструмент UML-моделювання (draw.io, Miro, lucidchart, Mermaidjs тощо)
+This project demonstrates behavioral UML modeling of a cybersecurity information system designed to detect unauthorized access attempts.
 
-## Acceptance criteria
+The system analyzes login activity, detects suspicious behavior, blocks unauthorized access and notifies the system administrator.
 
-- Побудовано всі три UML-діаграми:
-    - Use Case Diagram
-    - Sequence Diagram
-    - Activity Diagram
-- Діаграми логічно пов’язані між собою та відповідають обраній предметній області
-- Коректно використані основні UML-нотації та позначення
-- Здобувач розуміє призначення кожної діаграми та може пояснити її зміст
-- Усі діаграми збережені у вигляді зображень або файлів проєкту або варіант markdown + mermaidjs
-- Опис роботи та діаграми оформлені в markdown
-- Надати посилання на виконанні діаграми в projectPlan
+All diagrams were created using draw.io.
 
-## Usfull links
+---
 
-[Як будувати UML-діаграми. Розбираємо три найпопулярніші варіанти](https://dou.ua/forums/topic/40575/)
+## 🧩 Use Case Diagram
 
-[The ultimate guide to UML diagrams](https://miro.com/diagramming/what-is-a-uml-diagram/)
+![Use Case](uml-cybersecurity-Use-case.drawio.png)
 
-[Master the basics of Lucidchart in 3 minutes](https://www.lucidchart.com/pages/tutorial/uml-use-case-diagram#section_4)
+### Description
+Shows interaction between system actors and available system functionality.
 
-[Mermaidjs](https://mermaid.js.org/)
+Actors:
+- User
+- Administrator
+
+---
+
+## 🔄 Sequence Diagram
+
+![Sequence](uml-cybersecurity-Sequence Diagram.drawio.png)
+
+### Description
+Illustrates interaction between system components during authentication.
+
+Flow:
+1. User enters credentials
+2. Authentication server validates user
+3. Security analyzer analyzes login attempt
+4. Suspicious activity detected
+5. Login blocked
+6. Administrator receives alert
+
+---
+
+## ⚙️ Activity Diagram
+
+![Activity](uml-cybersecurity-Activity Diagram.drawio.png)
+
+### Description
+Represents workflow logic of authentication and decision-making process.
+
+Possible outcomes:
+- Normal login — access granted
+- Suspicious activity — account blocked and administrator notified
+
+---
+
+## 📁 Project Files
+
+Repository contains:
+- UML diagrams exported as images
+- draw.io project file
+- Markdown documentation
+
+---
+
+## ✅ Conclusion
+
+All diagrams describe one cybersecurity system from different perspectives:
+
+- Use Case Diagram — system functionality
+- Sequence Diagram — interaction between components
+- Activity Diagram — workflow logic
